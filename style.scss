@@ -6,11 +6,11 @@
 
 header {
   width: 100%;
-  background-color: #dad621;
+  
   display: flex; //Ativa as caixas flexíveis
-  justify-content: flex-start; //É o padrão. Os itens são postos no começo do eixo principal.
-  justify-content: flex-end; //Os itens são postos no final do eixo principal.
-  justify-content: center; //Os itens são postos no meio do eixo principal.
+  //justify-content: flex-start; //É o padrão. Os itens são postos no começo do eixo principal.
+  //justify-content: flex-end; //Os itens são postos no final do eixo principal.
+  //justify-content: center; //Os itens são postos no meio do eixo principal.
   justify-content: space-around; //O primeiro espaço vazio e o último são iguais.
   // justify-content: space-evenly; //O mesmo espaçamento entre os itens.
   // justify-content: space-between; // O primeiro item fica no começo do eixo e o último item fica no final do eixo.
@@ -20,23 +20,65 @@ header {
   align-items: center; //Os itens são postos no meio do eixo Y (vertical)
 }
 
+div{
+ // border: solid; 
+  display: flex;
+  justify-content: space-evenly;
+  width: 12%;
+  align-items: center;
+}
+
+
 h1 {
-  border: solid red;
+//  border: solid red;
 }
 
 nav {
-  border: solid rgb(14, 196, 29);
+ // border: solid rgb(14, 196, 29);
   display: flex;
   justify-content: space-evenly;
   //justify-content: space-between;
   width: 40%;
+  align-items: center;
 }
 
 a {
   text-decoration: none;
   font-size: 1.5rem;
-  color: red;
+  color: #4B5563;
 }
+
+.btnVerdeHeader{
+  background-color: #21C05C;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 18px;
+  border-radius: 6px;
+
+}
+
+
+//Primeira Section 
+
+.primeiraSection{
+  background-color: yellow;
+  height: 50vh;
+
+
+section{
+  border: solid;
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+}
+
+
+
 
 .produtosDisponiveis {
   background-color: rgb(203, 244, 230);

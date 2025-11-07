@@ -6,11 +6,7 @@
 
 header {
   width: 100%;
-  background-color: #dad621;
   display: flex;
-  justify-content: flex-start;
-  justify-content: flex-end;
-  justify-content: center;
   justify-content: space-around;
   height: 15vh;
   align-items: flex-start;
@@ -18,21 +14,46 @@ header {
   align-items: center;
 }
 
-h1 {
-  border: solid red;
+div {
+  display: flex;
+  justify-content: space-evenly;
+  width: 12%;
+  align-items: center;
 }
 
 nav {
-  border: solid rgb(14, 196, 29);
   display: flex;
   justify-content: space-evenly;
   width: 40%;
+  align-items: center;
 }
 
 a {
   text-decoration: none;
   font-size: 1.5rem;
-  color: red;
+  color: #4B5563;
+}
+
+.btnVerdeHeader {
+  background-color: #21C05C;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 18px;
+  border-radius: 6px;
+}
+
+.primeiraSection {
+  background-color: yellow;
+  height: 50vh;
+}
+.primeiraSection section {
+  border: solid;
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .produtosDisponiveis {
