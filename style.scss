@@ -6,7 +6,7 @@
 
 header {
   width: 100%;
-  
+
   display: flex; //Ativa as caixas flexíveis
   //justify-content: flex-start; //É o padrão. Os itens são postos no começo do eixo principal.
   //justify-content: flex-end; //Os itens são postos no final do eixo principal.
@@ -20,21 +20,21 @@ header {
   align-items: center; //Os itens são postos no meio do eixo Y (vertical)
 }
 
-div{
- // border: solid; 
+div {
+  // border: solid;
   display: flex;
   justify-content: space-evenly;
   width: 12%;
   align-items: center;
 }
 
-
 h1 {
-//  border: solid red;
+  //  border: solid red;
+  font-size: 2rem;
 }
 
 nav {
- // border: solid rgb(14, 196, 29);
+  // border: solid rgb(14, 196, 29);
   display: flex;
   justify-content: space-evenly;
   //justify-content: space-between;
@@ -45,40 +45,33 @@ nav {
 a {
   text-decoration: none;
   font-size: 1.5rem;
-  color: #4B5563;
+  color: #4b5563;
 }
 
-.btnVerdeHeader{
-  background-color: #21C05C;
-  color: #FFFFFF;
+.btnVerdeHeader {
+  background-color: #21c05c;
+  color: #ffffff;
   font-size: 1.5rem;
   cursor: pointer;
   padding: 18px;
   border-radius: 6px;
-
 }
 
+//Primeira Section
 
-//Primeira Section 
-
-.primeiraSection{
+.primeiraSection {
   background-color: yellow;
   height: 50vh;
 
-
-section{
-  border: solid;
-  width: 50%;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  section {
+    border: solid;
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
-
-}
-
-
-
 
 .produtosDisponiveis {
   background-color: rgb(203, 244, 230);
@@ -128,6 +121,62 @@ section{
       font-weight: 900;
       border-radius: 15px;
       font-size: 1.2rem;
+    }
+  }
+}
+
+//Responsivo
+
+//Estrutura com limitador, mínimo de px e máx de px
+// @media(min-width: ;) and (max-width: ;){
+
+// }
+
+//Quero que você aplique esse estilo em telas de 0px até 500px
+
+//Smartphone max: 500px
+
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+  }
+  .caixaLogo {
+    border: solid;
+    width: 70%;
+  }
+
+  nav {
+    border: solid;
+    width: 100%;
+
+    a {
+      font-size: 0.8rem;
+    }
+
+    .btnVerdeHeader {
+      font-size: 0.8rem;
+    }
+  }
+
+  //Section Produtos Disponíveis
+
+  .produtosDisponiveis {
+    display: flex; //Não teria necessidade de usar. Ele já foi ativado na linha 87
+    flex-direction: column;
+    background-color: pink;
+    
+
+    article {
+      width: 80%;
+      text-align: center;
+
+      button {
+       font-size: 1rem;
+       width: 70%;
+        font-weight: 400;
+      }
     }
   }
 }
