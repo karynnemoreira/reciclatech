@@ -20,7 +20,7 @@ header {
   align-items: center; //Os itens são postos no meio do eixo Y (vertical)
 }
 
-div {
+.caixaLogo {
   // border: solid;
   display: flex;
   justify-content: space-evenly;
@@ -57,21 +57,50 @@ a {
   border-radius: 6px;
 }
 
-//Primeira Section
+//----------- Primeira section - Desktop------------
 
 .primeiraSection {
-  background-color: yellow;
-  height: 50vh;
+  border: solid red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60vh;
 
   section {
-    border: solid;
-    width: 50%;
-    height: 50vh;
+    border: solid green;
+    height: 60vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
+
+    h2 {
+      font-size: 3.75rem;
+      font-weight: 700;
+      width: 55%;
+      border: solid red;
+    }
+
+    p {
+      font-size: 1.25rem;
+      width: 50%;
+      border: solid blue;
+    }
   }
 }
+
+.boxBtnsPrimeiraSection {
+  border: solid purple;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+
+  button {
+    cursor: pointer;
+    padding: 30px 40px;
+  }
+}
+
+//------ Section Produtos disponíveis ----------
 
 .produtosDisponiveis {
   background-color: rgb(203, 244, 230);
@@ -160,21 +189,56 @@ a {
     }
   }
 
-  //Section Produtos Disponíveis
+  //-----Primeira Section - Mobile -----
+
+  .primeiraSection {
+    background-color: violet;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 80vh;
+
+    section {
+      height: 70vh;
+      background-color: #16a34a;
+
+      h2 {
+        font-size: 1.5rem;
+        width: 100%;
+      }
+
+      p {
+        width: 100%;
+      }
+    }
+
+    .boxBtnsPrimeiraSection {
+      width: 100%;
+
+      button {
+        padding: 20px 30px;
+      }
+    }
+
+    img {
+      width: 50%;
+    }
+  }
+
+  //------Section Produtos Disponíveis-----
 
   .produtosDisponiveis {
     display: flex; //Não teria necessidade de usar. Ele já foi ativado na linha 87
     flex-direction: column;
     background-color: pink;
-    
 
     article {
       width: 80%;
       text-align: center;
 
       button {
-       font-size: 1rem;
-       width: 70%;
+        font-size: 1rem;
+        width: 70%;
         font-weight: 400;
       }
     }
