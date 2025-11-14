@@ -48,14 +48,12 @@ a {
 }
 
 .primeiraSection {
-  border: solid red;
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 60vh;
 }
 .primeiraSection section {
-  border: solid green;
   height: 60vh;
   display: flex;
   flex-direction: column;
@@ -65,16 +63,13 @@ a {
   font-size: 3.75rem;
   font-weight: 700;
   width: 55%;
-  border: solid red;
 }
 .primeiraSection section p {
   font-size: 1.25rem;
   width: 50%;
-  border: solid blue;
 }
 
 .boxBtnsPrimeiraSection {
-  border: solid purple;
   width: 50%;
   display: flex;
   justify-content: space-around;
@@ -84,8 +79,27 @@ a {
   padding: 30px 40px;
 }
 
+.dadosNumericos {
+  background-color: #f3f5f8;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  height: 20vh;
+}
+.dadosNumericos div {
+  border: solid;
+  width: 15%;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.dadosNumericos div h2 {
+  color: #16A34A;
+}
+
 .produtosDisponiveis {
-  background-color: rgb(203, 244, 230);
   height: 85vh;
   display: flex;
   justify-content: space-evenly;
@@ -96,7 +110,6 @@ a {
   align-items: center;
 }
 .produtosDisponiveis article {
-  border: solid red;
   width: 20%;
   height: 60vh;
   display: flex;
@@ -142,7 +155,6 @@ a {
     font-size: 0.8rem;
   }
   .primeiraSection {
-    background-color: violet;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -150,7 +162,6 @@ a {
   }
   .primeiraSection section {
     height: 70vh;
-    background-color: #16a34a;
   }
   .primeiraSection section h2 {
     font-size: 1.5rem;
@@ -168,10 +179,21 @@ a {
   .primeiraSection img {
     width: 50%;
   }
+  .dadosNumericos {
+    height: 25vh;
+  }
+  .dadosNumericos div {
+    width: 30%;
+  }
+  .dadosNumericos div h2 {
+    font-size: 1.8rem;
+  }
+  .dadosNumericos div p {
+    font-size: 1rem;
+  }
   .produtosDisponiveis {
     display: flex;
     flex-direction: column;
-    background-color: pink;
   }
   .produtosDisponiveis article {
     width: 80%;

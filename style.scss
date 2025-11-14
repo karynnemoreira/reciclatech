@@ -60,14 +60,14 @@ a {
 //----------- Primeira section - Desktop------------
 
 .primeiraSection {
-  border: solid red;
+  //border: solid red;
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 60vh;
 
   section {
-    border: solid green;
+    //border: solid green;
     height: 60vh;
     display: flex;
     flex-direction: column;
@@ -77,19 +77,19 @@ a {
       font-size: 3.75rem;
       font-weight: 700;
       width: 55%;
-      border: solid red;
+     // border: solid red;
     }
 
     p {
       font-size: 1.25rem;
       width: 50%;
-      border: solid blue;
+      //border: solid blue;
     }
   }
 }
 
 .boxBtnsPrimeiraSection {
-  border: solid purple;
+  //border: solid purple;
   width: 50%;
   display: flex;
   justify-content: space-around;
@@ -100,10 +100,35 @@ a {
   }
 }
 
+//----------- Section Dados numéricos---------------
+
+.dadosNumericos {
+  background-color: #f3f5f8;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  height: 20vh;
+
+  div {
+    border: solid;
+    width: 15%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+h2{
+  color: #16A34A;
+}
+
+  }
+}
+
 //------ Section Produtos disponíveis ----------
 
 .produtosDisponiveis {
-  background-color: rgb(203, 244, 230);
+  //background-color: rgb(203, 244, 230);
   height: 85vh;
   display: flex;
   justify-content: space-evenly;
@@ -114,7 +139,7 @@ a {
   align-items: center;
 
   article {
-    border: solid red;
+   // border: solid red;
     width: 20%;
     height: 60vh;
     display: flex;
@@ -166,6 +191,7 @@ a {
 //Smartphone max: 500px
 
 @media (max-width: 500px) {
+
   header {
     display: flex;
     flex-direction: column;
@@ -192,7 +218,7 @@ a {
   //-----Primeira Section - Mobile -----
 
   .primeiraSection {
-    background-color: violet;
+    //background-color: violet;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -200,7 +226,7 @@ a {
 
     section {
       height: 70vh;
-      background-color: #16a34a;
+     // background-color: #16a34a;
 
       h2 {
         font-size: 1.5rem;
@@ -225,12 +251,38 @@ a {
     }
   }
 
+
+//----------- Section Dados numéricos---------------
+
+.dadosNumericos{
+  //background-color: yellow;
+  height: 25vh;
+
+div{
+  width: 30%;
+
+h2{
+  font-size: 1.8rem;
+}
+
+p{
+  font-size: 1rem;
+}
+
+}
+
+
+}
+
+
+
   //------Section Produtos Disponíveis-----
 
   .produtosDisponiveis {
     display: flex; //Não teria necessidade de usar. Ele já foi ativado na linha 87
     flex-direction: column;
-    background-color: pink;
+   // background-color: pink;
+  
 
     article {
       width: 80%;
@@ -243,4 +295,7 @@ a {
       }
     }
   }
+
+
+
 }
